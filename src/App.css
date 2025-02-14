@@ -2,9 +2,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-image: url('/src/background.jpg'); /* Ensure the file is in the public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #333;
-  overflow-x: hidden;
 }
 
 /* Global Styling */
@@ -18,12 +20,14 @@ a:hover {
 }
 
 h2 {
-  color: #3d3d5c;
+  /* color: #3d3d5c; */
+  color: rgba(27,25,124,255);
 }
 
 /* Header Section */
 header {
-  background-color: #282846;
+  /* background-color: #282846; */
+  background-color: rgba(27,25,124,255);
   color: #fff;
   text-align: center;
   padding: 30px 0;

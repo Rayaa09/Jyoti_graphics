@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+// import Subgroups from "./subgroups";
+// import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -9,6 +11,9 @@ function App() {
         <h1>Jyoti Graphics</h1>
         <p>Your Trusted Printing Partner</p>
     </header>
+    {/* <Routes>
+          <Route path="/subgroups" element={<Subgroups />} />
+        </Routes> */}
 
     <div class="container">
         <div class="company">
@@ -17,9 +22,10 @@ function App() {
             </div>
             <div class="flip-box-back">
             <p>
-                <a href="https://maps.app.goo.gl/gPVooNCC7jyXqBMG7" target="_blank" rel="noreferrer">
+                <a href="s" target="_blank" rel="noreferrer">View SubBranch</a>
+                {/* <a href="https://maps.app.goo.gl/gPVooNCC7jyXqBMG7" target="_blank" rel="noreferrer">
                     Jyoti Graphics, 9/2, Chinta Moni, Jugal Kishore Das Ln, near CPI(M) Party Office, Kolkata, West Bengal 700009
-                </a>
+                </a> */}
             </p>
             </div>
         </div>
@@ -63,7 +69,7 @@ function App() {
         </div>
     </div>
     </div>
-
+    
     {/* <footer>
         <div class="social-icons">
             <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
