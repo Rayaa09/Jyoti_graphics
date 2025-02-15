@@ -1,33 +1,28 @@
-// import logo from './logo.svg';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import './App.css';
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
-// import Subgroups from "./subgroups";
-// import { Routes, Route } from "react-router-dom";
+import Branches from "./Branches";
+
 
 function App() {
+    const navigate = useNavigate();
   return (
     <div className="App">
     <header>
         <h1>Jyoti Graphics</h1>
         <p>Your Trusted Printing Partner</p>
     </header>
-    {/* <Routes>
-          <Route path="/subgroups" element={<Subgroups />} />
-        </Routes> */}
 
     <div class="container">
         <div class="company">
             <div class="flip-box-front">
             <h2>Jyoti Graphics - Main Office</h2>
             </div>
-            <div class="flip-box-back">
-            <p>
-                <a href="s" target="_blank" rel="noreferrer">View SubBranch</a>
-                {/* <a href="https://maps.app.goo.gl/gPVooNCC7jyXqBMG7" target="_blank" rel="noreferrer">
-                    Jyoti Graphics, 9/2, Chinta Moni, Jugal Kishore Das Ln, near CPI(M) Party Office, Kolkata, West Bengal 700009
-                </a> */}
-            </p>
+            <div class="flip-box-back" onClick={() => navigate("/branches")}>
+            <p>Click to Open the branches option</p>
             </div>
+    
         </div>
 
         <div class="company">
@@ -70,15 +65,6 @@ function App() {
     </div>
     </div>
     
-    {/* <footer>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer"><i className="fab fa-facebook"></i></a>
-        </div>
-        <p>&copy; 2024 Jyoti Graphics. All Rights Reserved.</p>
-    </footer> */}
-    
     <footer className="bg-gray-800 text-white text-center p-4">
       <div className="flex justify-center space-x-4 mb-2">
         <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
@@ -98,32 +84,15 @@ function App() {
   );
 }
 
-export default App;
+function AppWrapper() {
+    return (
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/branches" element={<Branches />} />
+        </Routes>
+      </Router>
+    );
+  }
 
-
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+  export default AppWrapper;
