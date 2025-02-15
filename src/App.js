@@ -3,13 +3,23 @@ import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react
 import './App.css';
 import { FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMailBulk } from "react-icons/fa";
 import Branches from "./Branches";
+// import Welcome from "./Welcome";
 
 
 function App() {
     const navigate = useNavigate();
   return (
     <div className="App">
+      {/* <Welcome /> */}
     <header>
+      <div className="logo">
+        <img src="/logo.png" alt="" style={{ 
+          height: '60px',
+          marginLeft: '-1000px',
+          marginBottom: '-100px',
+          verticalAlign: 'middle'
+        }} />
+      </div>
         <h1>Jyoti Graphics</h1>
                       <p>Your Trusted Printing Partner</p>
                       <div className="social-icons">
