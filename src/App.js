@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import './App.css';
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMailBulk } from "react-icons/fa";
 import Branches from "./Branches";
 
 
@@ -11,7 +11,18 @@ function App() {
     <div className="App">
     <header>
         <h1>Jyoti Graphics</h1>
-        <p>Your Trusted Printing Partner</p>
+                      <p>Your Trusted Printing Partner</p>
+                      <div className="social-icons">
+                      <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
+                        <FaInstagram size={24} />
+                      </a>
+                      <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                        <FaTwitter size={24} />
+                      </a>
+                      <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <FaFacebook size={24} />
+                      </a>
+                      </div>
     </header>
 
     <div class="container">
@@ -67,17 +78,28 @@ function App() {
     
     <footer className="bg-gray-800 text-white text-center p-4">
       <div className="flex justify-center space-x-4 mb-2">
-        <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
-          <FaInstagram size={24} />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noreferrer">
-          <FaTwitter size={24} />
-        </a>
-        <a href="https://facebook.com" target="_blank" rel="noreferrer">
-          <FaFacebook size={24} />
-        </a>
-      </div>
-      <p>&copy; 2024 Jyoti Graphics. All Rights Reserved.</p>
+        {/* <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
+                        <FaInstagram size={24} />
+                      </a>
+                      <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                        <FaTwitter size={24} />
+                      </a>
+                      <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <FaFacebook size={24} />
+                      </a> */}
+                      <div className="foot-social-icons">
+                      <a href="tel:+919123456789">
+                        {/* <i className="fas fa-phone" style={{ fontSize: '24px' }}></i> */}
+                        <FaPhone size={24} />
+                      </a>
+                      <a href="mailto:contact@jyotigraphics.com">
+                        {/* <i className="fas fa-envelope" style={{ fontSize: '24px' }}></i> */}
+                        <FaMailBulk size={24} />
+                      </a>
+                      </div>
+        
+                    </div>
+                    <p>&copy; 2025 Jyoti Graphics. All Rights Reserved.</p>
     </footer>
 
 </div>

@@ -193,6 +193,15 @@ header p {
   font-size: 1em;
   color: #ffffff;
 }
+.social-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 10px 50px;
+  align-items: center;
+  position: relative;
+  top: -80px;
+}
 
 /* Footer Section */
 footer {
@@ -215,6 +224,12 @@ footer .social-icons a:hover {
   transform: scale(1.2);
   color: #0056b3;
   box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF;
+}
+.foot-social-icons{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Keyframes for Animations */
