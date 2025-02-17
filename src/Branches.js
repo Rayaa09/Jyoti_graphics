@@ -91,25 +91,64 @@ function Branches() {
                   </p>
               </div>
           </div>
+          {/* <div class="company">
+                  <div class="flip-box-front">
+                  <h2>JYOTI ENTERPRISE</h2>
+              </div>
+              <div class="flip-box-back">
+                  <p>
+                      <a href="https://maps.app.goo.gl/ZpNVH2muyBSiHUEbA" target="_blank" rel="noreferrer">
+                      30A CANAL EAST ROAD, KOLKATA- 700 011
+                      </a>
+                  </p>
+              </div>
+          </div>
+          <div class="company">
+                  <div class="flip-box-front">
+                  <h2>SIGN INK</h2>
+              </div>
+              <div class="flip-box-back">
+                  <p>
+                      <a href="https://maps.app.goo.gl/ZpNVH2muyBSiHUEbA" target="_blank" rel="noreferrer">
+                      30A CANAL EAST ROAD, KOLKATA- 700 011
+                      </a>
+                  </p>
+              </div>
+          </div>
+          <div class="company">
+                  <div class="flip-box-front">
+                  <h2>AMAN PRINTERS</h2>
+              </div>
+              <div class="flip-box-back">
+                  <p>
+                      <a href="https://maps.app.goo.gl/ZNwejhzHRQEZHgkw6" target="_blank" rel="noreferrer">
+                      109/1 DR. SURESH MUKHERJEE ROAD, KOLKATA-700 010
+                      </a>
+                  </p>
+              </div>
+          </div>
+          <div class="company">
+                  <div class="flip-box-front">
+                  <h2>JYOTI LASER POINT</h2>
+              </div>
+              <div class="flip-box-back">
+                  <p>
+                      <a href="https://maps.app.goo.gl/xjY5rmzyGqqWLM1u8" target="_blank" rel="noreferrer">
+                      63/2D SURYA SEN STREET, KOLKATA- 700 009
+                      </a>
+                  </p>
+              </div>
+          </div> */}
           </div>
           <button onClick={() => navigate('/')} className="back-button">← Back to Home</button>
           <footer className="bg-gray-800 text-white text-center p-4">
             <div className="flex justify-center space-x-4 mb-2">
-              {/* <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
-                <FaInstagram size={24} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <FaTwitter size={24} />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <FaFacebook size={24} />
-              </a> */}
               <div className="foot-social-icons">
-              <a href="tel:+919123456789">
+              <a href="tel:+919836267009">
                 {/* <i className="fas fa-phone" style={{ fontSize: '24px' }}></i> */}
                 <FaPhone size={24} />
               </a>
-              <a href="mailto:contact@jyotigraphics.com">
+              <a href="mailto:jyotigraphics008@gmail.com">
                 {/* <i className="fas fa-envelope" style={{ fontSize: '24px' }}></i> */}
                 <FaMailBulk size={24} />
               </a>
