@@ -11,21 +11,13 @@ function App() {
   return (
     <div className="App">
         <header>
-          {/* <div className="logo">
-          <img src="/logo.png" alt="" style={{ 
-            height: '60px',
-            marginLeft: '-1000px',
-            marginBottom: '-100px',
-            verticalAlign: 'middle'
-          }} />
-          </div> */}
-          <div className="header-image">
-            <img src="/jyoti-graphics.png" alt="" style={{
-            height: '150px',
-            margin: '20px auto',
-            display: 'block'
+          <picture>
+            <img src="/jyoti-graphics.png" alt="Jyoti Graphics" style={{
+              height: '150px',
+              margin: '20px auto',
+              display: 'block'
             }} />
-          </div>
+          </picture>
           <p>Your Trusted Printing Partner</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
