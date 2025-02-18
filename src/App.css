@@ -336,10 +336,25 @@ footer .social-icons a:hover {
   header p {
     font-size: 1em;
   }
+  .App header picture img  {
+    width: fit-content;
+    margin-left: 0;
+    padding-left: 0;
+    height: 30vh;
+    object-fit: contain;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+     
+  }
 
   .container {
-    max-width: 100%;
+    max-width: 70%;
     padding: 0 10px;
+
   }
 
   .company {
@@ -396,12 +411,19 @@ footer .social-icons a:hover {
     width: fit-content;
   }
 
-  .header-image {
+  .App header picture img  {
     width: fit-content;
-    height: auto;
-    margin: 0px;
-    padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 0;
+    padding-left: 0;
+    height: 30vh;
+    object-fit: contain;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+     
   }
 
   .container {
@@ -409,7 +431,11 @@ footer .social-icons a:hover {
   }
 
   .company {
-    width: 95%; /* Reduce the width slightly */
+    width: 83%; /* Reduce the width slightly */
+    text-align: center;
+    margin-left: 13px;
+    padding-left: 0px;
+    border-left:0px;
   }
 
   .flip-box-front, .flip-box-back {
@@ -424,5 +450,68 @@ footer .social-icons a:hover {
   .back-button {
     padding: 6px 12px;
     font-size: 12px;
+  }
+}
+@media (max-width: 412px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App header picture img  {
+    width: fit-content;
+    margin-left: 0;
+    padding-left: 0;
+    height: 30vh;
+    object-fit: contain;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .company {
+    width: 70%;
+    text-align: center;
+    margin-left: -20px;
+    padding-left: 0px;
+    border-left:0px;
+  }
+
+  .flip-box-front, .flip-box-back {
+    font-size: 10px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .back-button {
+    padding: 5px 10px;
+    font-size: 11px;
   }
 }
