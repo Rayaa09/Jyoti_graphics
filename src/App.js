@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
+import './TestApp.css';
 import { FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMailBulk } from "react-icons/fa";
 import Branches from "./Branches";
-// import Welcome from "./Welcome";
 
 
 function App() {
@@ -99,11 +97,9 @@ function App() {
           <div className="flex justify-center space-x-4 mb-2">
                   <div className="foot-social-icons">
                   <a href="tel:+919836267009">
-                  {/* <i className="fas fa-phone" style={{ fontSize: '24px' }}></i> */}
                         <FaPhone size={24} />
                       </a>
                       <a href="mailto:jyotigraphics008@gmail.com">
-                        {/* <i className="fas fa-envelope" style={{ fontSize: '24px' }}></i> */}
                         <FaMailBulk size={24} />
                       </a>
                       </div>
