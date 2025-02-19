@@ -10,7 +10,14 @@ function Branches() {
   return (
     <div className="branches-page">
       <header>
-              <h1>Jyoti Graphics</h1>
+      <picture>
+            <img src="/jyoti-graphics.png" alt="Jyoti Graphics" style={{
+              height: '150px',
+              margin: '20px auto',
+              display: 'block'
+            }} />
+          </picture>
+              {/* <h1>Jyoti Graphics</h1> */}
               <p>Your Trusted Printing Partner</p>
               <div className="social-icons">
               <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
