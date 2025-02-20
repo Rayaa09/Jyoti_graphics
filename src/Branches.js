@@ -18,17 +18,28 @@ function Branches() {
           </picture>
               <p>Your Trusted Printing Partner</p>
               <div className="social-icons">
-              <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
-                <FaInstagram size={24} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <FaTwitter size={24} />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <FaFacebook size={24} />
-              </a>
-              </div>
-          </header>
+                        <a href="tel:+919836267009">
+                                      <FaPhone size={24} color="white"/>
+                                    </a>
+                        <a href="mailto:jyotigraphics008@gmail.com">
+                                      <FaMailBulk size={24} color="white" />
+                                    </a>
+                        <a href="https://wa.me/919836267009" target="_blank" rel="noreferrer">
+                          <FaWhatsapp size={24} color="white" />
+                          </a>
+                        </div>
+                        {/* <div className="social-icons">
+                          <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
+                          <FaInstagram size={24} color="white" />
+                          </a>
+                          <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                          <FaTwitter size={24} color="white" />
+                          </a>
+                          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                          <FaFacebook size={24} color="white"/>
+                          </a>
+                        </div> */}
+                      </header>
       
           <div class="container">
               <div class="company">
@@ -99,20 +110,22 @@ function Branches() {
           </div>
           <button onClick={() => navigate('/')} className="back-button">← Back to Home</button>
           <footer className="bg-gray-800 text-white text-center p-4">
-            <div className="flex justify-center space-x-4 mb-2">
-              <div className="foot-social-icons">
-              <a href="tel:+919836267009">
-                <FaPhone size={24} />
-              </a>
-              <a href="mailto:jyotigraphics008@gmail.com">
-
-                <FaMailBulk size={24} />
-              </a>
-              </div>
-
-            </div>
-            <p>&copy; 2025 Jyoti Graphics. All Rights Reserved.</p>
-          </footer>
+          <div className="flex justify-center space-x-4 mb-2">
+          <div className="social-icons">
+            <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
+            <FaInstagram size={24} color="white" />
+            </a>
+            {/* <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <FaTwitter size={24} color="white" />
+            </a> */}
+            <a href="https://facebook.com/share/1BYAcEmKrv/?mibextid=wwXlfr" target="_blank" rel="noreferrer">
+            <FaFacebook size={24} color="white"/>
+            </a>
+          </div>
+        
+                    </div>
+                    <p>&copy; 2025 Jyoti Graphics. All Rights Reserved.</p>
+    </footer>
     </div>
   );
 }
