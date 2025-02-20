@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import './TestApp.css';
-import { FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMailBulk, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaPhone, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 import Branches from "./Branches";
 
 
@@ -28,17 +28,6 @@ function App() {
             <FaWhatsapp size={24} color="white" />
             </a>
           </div>
-          {/* <div className="social-icons">
-            <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
-            <FaInstagram size={24} color="white" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <FaTwitter size={24} color="white" />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <FaFacebook size={24} color="white"/>
-            </a>
-          </div> */}
         </header>
 
         <div class="container">

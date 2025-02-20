@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import "./TestApp.css"; // Keep styling if needed
-import { FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMailBulk } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaPhone, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 
 function Branches() {
   const navigate = useNavigate();
@@ -28,17 +28,6 @@ function Branches() {
                           <FaWhatsapp size={24} color="white" />
                           </a>
                         </div>
-                        {/* <div className="social-icons">
-                          <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
-                          <FaInstagram size={24} color="white" />
-                          </a>
-                          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                          <FaTwitter size={24} color="white" />
-                          </a>
-                          <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                          <FaFacebook size={24} color="white"/>
-                          </a>
-                        </div> */}
                       </header>
       
           <div class="container">
