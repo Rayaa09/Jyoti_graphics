@@ -110,9 +110,9 @@ function App() {
             <a href="https://www.instagram.com/jyoti_print" target="_blank" rel="noreferrer">
             <FaInstagram size={24} color="white" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://twitter.com" target="_blank" rel="noreferrer">
             <FaTwitter size={24} color="white" />
-            </a>
+            </a> */}
             <a href="https://facebook.com/share/1BYAcEmKrv/?mibextid=wwXlfr" target="_blank" rel="noreferrer">
             <FaFacebook size={24} color="white"/>
             </a>
